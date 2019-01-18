@@ -1,14 +1,17 @@
+* {
+    box-sizing: border-box;
+}
 
 body {
     background-image: url("img/mountain.jpeg");
     font-family: 'Raleway', sans-serif;
-    margin:0px
-
+    margin: 0px;
+    background-repeat: no-repeat;
 }
 
 header {
     background-color: black;
-    padding:0;
+    padding: 0;
     margin: 0px;
 }
 
@@ -20,13 +23,12 @@ ul {
 li {
     padding: 10px;
     padding-left: 20px;
-    text-decoration: none;
 }
 
 li a {
     color: white;
     text-decoration: none;
-    padding:1px;
+    padding: 1px;
 }
 
 section {
@@ -36,11 +38,126 @@ section {
     padding-bottom: 1px;
 }
 
-section.h3 {
-
+section.articles {
+    background-color: white;
+    padding: 10px;
+    margin: 0px;
 }
 
 .text {
     text-align: center;
     color: white;
+}
+
+.text a {
+    text-decoration: none;
+    color: white;
+}
+
+.titel {
+    text-align: center;
+}
+
+.datum {
+    text-align: center;
+    color: darkgrey;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+footer {
+    height: 80px;
+}
+
+footer.eindepagina {
+    padding: 10px;
+    background-color: white;
+    margin: 0px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    display: block;
+}
+
+@media all and (min-width: 500px) {
+
+    li {
+        display: inline-block;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    div#wrapper {
+        width: 400px;
+        margin: 0 auto;
+    }
+}
+
+@media all and (min-width: 500px) {
+
+    section#lente {
+        width: 45%;
+        height: 45%;
+        float: left;
+    }
+
+    section#kijken {
+        width: 45%;
+        float: right;
+    }
+
+    section#backpacking {
+        width: 45%;
+        float: left;
+    }
+
+    section#wildcamperen {
+        width: 45%;
+        float: right;
+
+    }
+
+}
+
+@media all and (min-width: 900px) {
+
+    section#lente {
+        width: 30%;
+        float: left;
+    }
+
+    section#kijken {
+        width: 30%;
+        float: left;
+    }
+
+    section#backpacking {
+        width: 30%;
+        float: left;
+    }
+
+    section#wildcamperen {
+        width: 30%;
+        float: left;
+    }
+}
+
+@media all and (min-width: 900px) {
+
+    div#wrapper {
+        width: 600px;
+        margin: 0 auto;
+    }
+
 }
